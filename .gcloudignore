@@ -1,0 +1,11 @@
+..git
+.gitignore
+__pycache__/
+.pytest_cache/
+tests/
+docs/
+*.md
+.vscode/
+.idea/
+deploy/
+config/
