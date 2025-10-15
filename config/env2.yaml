@@ -1,0 +1,21 @@
+# Cloud Function ENV2 Configuration
+# Purchases únicamente - 1 ejecución diaria
+
+env_variables:
+  BQ_PROJECT: "powerbi-445616"
+  BQ_TABLES: "purchases"
+  URL: "https://api.siigo.com/v1/"
+  URL_AUTH: "https://api.siigo.com/auth"
+  NUM_SOURCES: "2"
+  NUM_DAYS: "1"
+  RATE_LIMIT_PER_MINUTE: "95"
+  BATCH_PAUSE_INTERVAL: "20"
+  BATCH_PAUSE_DURATION: "30"
+  BQ_DATASET1: "raw"
+  BQ_DATASET2: "raw_2"
+
+secret_env_variables:
+  USER1: projects/PROJECT_ID/secrets/SIIGO_USER1/versions/latest
+  KEY1: projects/PROJECT_ID/secrets/SIIGO_KEY1/versions/latest
+  USER2: projects/PROJECT_ID/secrets/SIIGO_USER2/versions/latest
+  KEY2: projects/PROJECT_ID/secrets/SIIGO_KEY2/versions/latest
